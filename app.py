@@ -5,11 +5,11 @@ import pandas as pd
 import os
 from fastai.vision.all import Path,load_learner,Image
 
-path = Path('Birds_Dataset\train\r0858516_Birds.pkl')
+path = Path('Birds_Dataset/train/r0858516_Birds.pkl')
 
 learn = load_learner(path)
 
-df = pd.read_csv("Birds_Dataset\Train\labels.csv",index_col=['label'])
+df = pd.read_csv("Birds_Dataset/Train/labels.csv",index_col=['label'])
 
 def get_name(name):
     return df[df.index == name].reset_index(drop=True)['Bird'][0]
