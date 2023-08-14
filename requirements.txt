@@ -107,12 +107,6 @@ stack-data==0.6.2
 streamlit==1.25.0
 sympy==1.11.1
 tenacity==8.2.3
-tensorboard==2.13.0
-tensorboard-data-server==0.7.1
-tensorflow==2.13.0
-tensorflow-estimator==2.13.0
-tensorflow-intel==2.13.0
-tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.3.0
 thinc==8.1.10
 threadpoolctl==3.2.0
