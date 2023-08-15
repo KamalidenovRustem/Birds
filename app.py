@@ -20,7 +20,7 @@ import platform
 
 path = Path('/mount/src/birds/Birds_Dataset/train/r0858516_Birds.pkl')
 
-learn = load_learner(path)
+learn = load_learner('/mount/src/birds/Birds_Dataset/train/r0858516_Birds.pkl')
 
 df = pd.read_csv("/mount/src/birds/Birds_Dataset/train/labels.csv",index_col=['label'])
 
