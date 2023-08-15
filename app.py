@@ -12,9 +12,9 @@ plt = platform.system()
 if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
-learn =  load_learner(pathlib.Path('/Birds_Dataset/train/')/'r0858516_Birds.pkl')
+learn =  load_learner(pathlib.Path('/mount/src/birds/Birds_Dataset/train/')/'r0858516_Birds.pkl')
 
-df = pd.read_csv(pathlib.Path('/Birds_Dataset/train/')/"labels.csv",index_col=['label'])
+df = pd.read_csv(pathlib.Path('/mount/src/birds/Birds_Dataset/train/')/"labels.csv",index_col=['label'])
 #/mount/src/birds/requirements.txt    
 
 
