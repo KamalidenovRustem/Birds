@@ -12,11 +12,11 @@ plt = platform.system()
 if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
-path = Path('Birds_Dataset\train\r0858516_Birds.pkl')
+learn =  load_learner(pathlib.Path()/'train/r0858516_Birds.pkl')
 
-learn =  load_learner(pathlib.Path()/'r0858516_Birds.pkl')
+df = pd.read_csv(pathlib.Path()/"train/labels.csv",index_col=['label'])
 
-df = pd.read_csv(pathlib.Path()/"labels.csv",index_col=['label'])
+/mount/src/birds/requirements.txt    
 
 def get_name(name):
     return df[df.index == name].reset_index(drop=True)['Bird'][0]
