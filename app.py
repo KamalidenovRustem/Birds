@@ -7,22 +7,22 @@ from fastai.vision.all import Path,load_learner,Image
 import pathlib
 import platform
 
-#plt = platform.system()
+plt = platform.system()
 
-#if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
-#if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
+if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 
-#learn =  load_learner(pathlib.Path()/'train/r0858516_Birds.pkl')
+learn =  load_learner(pathlib.Path('/Birds_Dataset/train/')/'r0858516_Birds.pkl')
 
-#df = pd.read_csv(pathlib.Path()/"train/labels.csv",index_col=['label'])
+df = pd.read_csv(pathlib.Path('/Birds_Dataset/train/')/"labels.csv",index_col=['label'])
 #/mount/src/birds/requirements.txt    
 
 
-path = Path('/mount/src/birds/Birds_Dataset/train/r0858516_Birds.pkl')
+#path = Path('/mount/src/birds/Birds_Dataset/train/r0858516_Birds.pkl')
 
-learn = load_learner('/mount/src/birds/Birds_Dataset/train/r0858516_Birds.pkl')
+#learn = load_learner(path)
 
-df = pd.read_csv("/mount/src/birds/Birds_Dataset/train/labels.csv",index_col=['label'])
+#df = pd.read_csv("/mount/src/birds/Birds_Dataset/train/labels.csv",index_col=['label'])
 
 def get_name(name):
     return df[df.index == name].reset_index(drop=True)['Bird'][0]
