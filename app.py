@@ -15,8 +15,7 @@ if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 learn =  load_learner(pathlib.Path()/'train/r0858516_Birds.pkl')
 
 df = pd.read_csv(pathlib.Path()/"train/labels.csv",index_col=['label'])
-
-/mount/src/birds/requirements.txt    
+#/mount/src/birds/requirements.txt    
 
 def get_name(name):
     return df[df.index == name].reset_index(drop=True)['Bird'][0]
