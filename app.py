@@ -37,7 +37,7 @@ def predict_img(img, learn):
  
 html_temp = """
     <div style="background-color:#f63366;padding:10px;margin-bottom: 25px">
-    <h2 style="color:white;text-align:center;">Car Model Classification App</h2>
+    <h2 style="color:white;text-align:center;">Bird Model Classification App</h2>
     <p style="color:white;text-align:center;" >This is a <b>Streamlit</b> app use for prediction of the <b>7 types of Birds</b>.</p>
     </div>
     """
