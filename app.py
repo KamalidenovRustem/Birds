@@ -4,7 +4,7 @@ import PIL.Image
 import pandas as pd
 import os
 from fastai.vision.all import Path,load_learner,Image
-
+import pathlib
 import platform
 
 plt = platform.system()
